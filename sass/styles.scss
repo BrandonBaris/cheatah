@@ -1,5 +1,5 @@
-@import "partials/settings";
-@import "partials/foundation";
+@import url(http://fonts.googleapis.com/css?family=Anaheim|Varela);@import "partials/_settings";
+@import "partials/_foundation";
 
 $light_tone1: #EFCCA6;
 $light_tone2: #CAC764;
@@ -7,7 +7,40 @@ $med_tone1: #C7702A;
 $med_tone2: #7D994B;
 $dark_tone1: #805A51;
 $dark_tone2: #4A2C22;
+
 body {
   background-color: $med_tone2;
+  text-align: center;
 }
 
+h1 {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-weight: 500;
+  color: $dark_tone2;
+}
+
+div {
+  &.drop_down {
+    width: 400px;
+    margin: auto;
+  }
+  &.user_input {
+    width: 400px;
+    margin: auto;
+  }
+}
+
+.img_cheetah {
+  margin: auto;
+  background-color: #FFF;
+  width: 400px;
+  border-radius: 0.7rem;
+}

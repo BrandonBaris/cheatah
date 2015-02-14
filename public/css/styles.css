@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Anaheim|Varela);
 meta.foundation-version {
   font-family: "/5.5.1/"; }
 
@@ -56,7 +57,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Anaheim', Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -1337,7 +1338,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Anaheim', Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -1743,7 +1744,7 @@ select {
   border-color: #cccccc;
   padding: 0.5rem;
   font-size: 0.875rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Anaheim', Helvetica, Roboto, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
@@ -1993,7 +1994,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: 'Anaheim', Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
@@ -2481,7 +2482,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Anaheim', Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -3005,4 +3006,29 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 body {
-  background-color: #7D994B; }
+  background-color: #7D994B;
+  text-align: center; }
+
+h1 {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 3rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-weight: 500;
+  color: #4A2C22; }
+
+div.drop_down {
+  width: 400px;
+  margin: auto; }
+div.user_input {
+  width: 400px;
+  margin: auto; }
+
+.img_cheetah {
+  margin: auto;
+  background-color: #FFF;
+  width: 400px;
+  border-radius: 0.7rem; }
