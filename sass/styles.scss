@@ -1,6 +1,13 @@
 @import "partials/settings";
 @import "partials/foundation";
 
+$light_tone1: #EFCCA6;
+$light_tone2: #CAC764;
+$med_tone1: #C7702A;
+$med_tone2: #7D994B;
+$dark_tone1: #805A51;
+$dark_tone2: #4A2C22;
 body {
-  background: #592912;
+  background-color: $med_tone2;
 }
+
