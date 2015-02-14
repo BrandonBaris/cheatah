@@ -1,0 +1,21 @@
+{
+  "name": "cheatah",
+  "version": "0.0.0",
+  "authors": [
+    "Brandon Baris <brandonbaris@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "~5.5.1"
+  },
+  "dependencies": {
+    "foundation": "~5.5.1"
+  }
+}
