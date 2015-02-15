@@ -77,12 +77,18 @@ var img_lion_div = $("<div>", {
     text: needs
   });
 
+  var cheatah_info = $("<div>", {
+    class: "info"
+  });
+
+  cheatah_info.append([cheatah_name, cheatah_offer, cheatah_needs]);
+
   var back_button = $("<div>", {
     class: "back_button clearfix",
     html: "<a class=\"button\" href=\"index.html\">Change Criteria</a>"
   });
 
-  cheatah_info_div.append([no_link, cheatah_name, cheatah_offer, cheatah_needs, yes_link]);
+  cheatah_info_div.append([no_link, cheatah_info, yes_link]);
 
   img_lion_div.append([cheatah_info_div, back_button]);
 
