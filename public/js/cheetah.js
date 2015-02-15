@@ -1,75 +1,56 @@
-var algebra = document.getElementById("need_1").innerHTML;
-var economics = document.getElementById("need_2").innerHTML;
-var engrish = document.getElementById("need_3").innerHTML;
-var accounting = document.getElementById("need_4").innerHTML;
-var love = document.getElementById("need_5").innerHTML;
+var algebra = document.getElementById("Algebra").innerHTML;
+var economics = document.getElementById("Economics").innerHTML;
+var engrish = document.getElementById("Engrish").innerHTML;
+var accounting = document.getElementById("Accounting").innerHTML;
+var love = document.getElementById("Love").innerHTML;
 
 
-function match (a, b) {
-  
-var difference = {};
-var results = [];
- 
-    for (var i = 0; i < b.length; i++) {
-        difference[b[i]] = true;
-    }
-  
-    for (var j = 0; j < a.length; j++) {
-        if (difference[a[j]]) {
-            toString(results.push(a[j]));
-        }
-    }
-    console.log(results);
-    return results;
 
+function User ( name, offers, needs, location ) {
+
+  this.name = name;
+  this.offers = offers;
+  this.needs = needs;
+  this.location = location;
 }
-var skills = [algebra, economics, english, chemistry];
-var offer = [algebra, economics, english];
-match(skills, offer);
 
 
-var Evan = {
-  name: "Evan",
-  offers: algebra,
-  needs: accounting,
-  location: "Honolulu"
-};
+var Jon = new User("Jon", accounting, engrish, "Honolulu");
+var Joelle = new User("Joelle", algebra, engrish, "Honolulu");
+var Evan = new User("Evan", engrish, accounting, "Honolulu");
+var Teresa = new User("Teresa", accounting, engrish, "Honolulu");
+var Sarah = new User("Sarah", accounting, engrish, "Honolulu");
 
-var Joelle = {
-  name: "Joelle",
-  offers: love,
-  needs: accounting,
-  location: "Honolulu"
-};
+var allUsers = [jon,joelle,evan,teresa,sarah];
 
-var Brandon = {
-  name: "Brandon",
-  offers: engrish,
-  needs: accounting,
-  location: "Honolulu"
-};
 
-var Sarah = {
-  name: "Sarah",
-  offers: algebra,
-  needs: economics,
-  location: "Honolulu"
-};
-
-var Teresa = {
-  name: "Teresa",
-  offers: engrish,
-  needs: accounting,
-  location: "Honolulu"
-};
-
-var Teresa = {
-  name: "Jon",
-  offers: accounting,
-  needs: english,
-  location: "Honolulu"
-};
+for(var i = 0; i < allUsers.length; i++) {
+  if("accounting" === allUsers[i].offers) {
+    console.log(allUsers[i]);
+  }
+}
 
 
 
+// User.prototype.match = function (a, b) {
+  
+// var difference = {};
+// var results = [];
+ 
+//     for (var i = 0; i < b.length; i++) {
+//         difference[b[i]] = true;
+//     }
+  
+//     for (var j = 0; j < a.length; j++) {
+//         if (difference[a[j]]) {
+//             results.push(a[j]);
+//         }
+//     }
+//     console.log(results);
+//     return results;
+
+// };
+// var skills = [algebra, economics, english, chemistry];
+// var offer = [algebra, economics, english];
+// match(skills, offer);
 
