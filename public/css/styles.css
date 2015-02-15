@@ -3053,7 +3053,10 @@ header {
     margin: auto; }
   .container .info {
     float: left;
-    padding: 0 27px; }
+    padding: 0 30px; }
+  .container .info2 {
+    float: left;
+    padding: 0 70px; }
   .container .yes {
     height: 75px;
     width: 75px;

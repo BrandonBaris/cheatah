@@ -15,11 +15,11 @@ function User ( name, offers, needs, location ) {
 }
 
 
-var jon = new User("Jon", "accounting", "engrish", "Honolulu");
-var joelle = new User("Joelle", "algebra", "engrish", "Honolulu");
-var evan = new User("Evan", "engrish", "accounting", "Honolulu");
-var teresa = new User("Teresa", "accounting", "engrish", "Honolulu");
-var sarah = new User("Sarah", "accounting", "engrish", "Honolulu");
+var jon = new User("Jon", "Accounting", "English", "Honolulu");
+var joelle = new User("Joelle", "Algebra", "English", "Honolulu");
+var evan = new User("Evan", "English", "Accounting", "Honolulu");
+var teresa = new User("Teresa", "Economics", "English", "Honolulu");
+var sarah = new User("Sarah", "Accounting", "English", "Honolulu");
 
 var allUsers = [jon,joelle,evan,teresa,sarah];
 var compareButt = document.getElementById("compare-init");
@@ -39,12 +39,12 @@ function magical(event) {
 }
 
 function displayResults(name, offers, needs){
-var img_lion_div = $("<div>", {
+  var img_lion_div = $("<div>", {
     class: "img_lion"
   });
 
   var img_lion = $("<img>", {
-    html: "<img src=\"https://s3.amazonaws.com/uploads.hipchat.com/54891/1598756/pzSWK7MXQTdkjVq/lion_line_art_by_skull_fa...\" alt=\"Cheatah\">"
+    html: "<img src=\"/img/lion.png\">"
   });
 
   var cheatah_info_div = $("<div>", {
@@ -77,16 +77,23 @@ var img_lion_div = $("<div>", {
     text: needs
   });
 
+  var cheatah_info = $("<div>", {
+    class: "info2"
+  });
+
+  cheatah_info.append([cheatah_name, "Offer:",  cheatah_offer, "Needs:", cheatah_needs]);
+
   var back_button = $("<div>", {
     class: "back_button clearfix",
     html: "<a class=\"button\" href=\"index.html\">Change Criteria</a>"
   });
 
-  cheatah_info_div.append([no_link, cheatah_name, cheatah_offer, cheatah_needs, yes_link]);
+  
+  cheatah_info_div.append([no_link, cheatah_info, yes_link]);
 
-  img_lion_div.append([cheatah_info_div, back_button]);
+  // img_lion_div.append(cheatah_info_div);
 
-  $("#main").append(img_lion_div);
+  $("#main").append([cheatah_info_div, back_button]);
 }
 
 
