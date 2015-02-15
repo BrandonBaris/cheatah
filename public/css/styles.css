@@ -1341,7 +1341,7 @@ button, .button {
   font-family: 'Anaheim', Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.25rem;
+  margin: 0 0 0;
   position: relative;
   text-decoration: none;
   text-align: center;
@@ -3010,7 +3010,7 @@ body {
 
 header {
   background-color: #7D994B;
-  padding: 20px;
+  padding: 10px;
   -webkit-box-shadow: 0px 2px 15px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 15px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 15px -4px rgba(0, 0, 0, 0.75); }
@@ -3025,11 +3025,23 @@ header {
 .container {
   max-width: 400px;
   margin: 10px auto; }
-  .container .img_cheetah {
-    background-color: #FFF;
-    border-radius: 0.7rem;
+  .container .img_cheetah img {
     width: 200px;
     height: 200px;
+    background-color: #FFF;
+    border-radius: 0.7rem;
+    margin: auto; }
+  .container .img_gery img {
+    width: 150px;
+    height: 200px;
+    background-color: #FFF;
+    border-radius: 0.7rem;
+    margin: auto; }
+  .container .img_lion img {
+    width: 200px;
+    height: 200px;
+    background-color: #FFF;
+    border-radius: 0.7rem;
     margin: auto; }
   .container h3 {
     font-size: 1.5rem; }
@@ -3039,6 +3051,9 @@ header {
   .container div.user_input {
     width: 400px;
     margin: auto; }
+  .container .info {
+    float: left;
+    padding: 0 27px; }
   .container .yes {
     height: 75px;
     width: 75px;
@@ -3055,4 +3070,23 @@ header {
     float: left; }
 
 .back_button {
-  padding-top: 20px; }
+  padding-top: 50px; }
+
+.msg_container {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 30px; }
+  .msg_container .cheetah_1 {
+    padding: 10px;
+    background-color: #EFFACE;
+    border-radius: 5px; }
+    .msg_container .cheetah_1 img {
+      float: right; }
+  .msg_container .reply {
+    border: 1px solid #4A2C22;
+    margin-top: 60px;
+    -webkit-box-shadow: inset 3px 4px 14px -7px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: inset 3px 4px 14px -7px rgba(0, 0, 0, 0.51);
+    box-shadow: inset 3px 4px 14px -7px rgba(0, 0, 0, 0.51); }
+    .msg_container .reply a {
+      float: right; }
