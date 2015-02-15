@@ -15,7 +15,7 @@
 </header>
 
 <!-- IMAGE STUFF -->
-<div class="container clearfix">
+<div class="container clearfix" id="main">
   <div class="img_cheetah">
     <img src="http://cdn.vectorstock.com/i/composite/89,84/running-cheetah-black-and-white-vector-1168984.jpg" alt="Cheatah">
   </div>
@@ -25,11 +25,11 @@
     <form action="POST">
     <div class="user_input">
     <h3>NEED HELP IN?</h3>
-      <select>
-        <option id="Algebra" value="value1">Algebra</option>
-        <option id="Economics" value="value2">Economics</option>
-        <option id="Engrish" value="value3">Engrish</option>
-        <option id="Accounting" value="value4">Accounting</option>
+      <select id="need">
+        <option id="need_1" value="algebra">Algebra</option>
+        <option id="need_2" value="economics">Economics</option>
+        <option id="need_3" value="engrish">Engrish</option>
+        <option id="need_4" value="accounting">Accounting</option>
       </select>
     </div>
   <!-- DROP DOWN MENU? -->
@@ -44,7 +44,7 @@
     </div>
   <!-- BUTTON SUBMISSION -->
       <div>
-        <a class="button" href="results.html">Submit</a>
+        <a class="button" id="compare-init" href="results.html">Submit</a>
       </div>
     </form>
   </div>
@@ -63,10 +63,10 @@
    <script src="/bower_components/modernizr/modernizr.js"></script>
    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
    <script src="/bower_components/foundation/js/foundation.min.js"></script>
-    <script src="/js/cheetah.js"></script>
    <script>
      $(document).foundation();
    </script>
+    <script src="/js/cheetah.js"></script>
 </body>
 </html>
 
